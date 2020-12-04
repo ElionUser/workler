@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/Topacia.css">
+    <link rel="stylesheet" href="css/Icons/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Update Avatar Modal -->
+    <div class="modal fade" id="updateAvatar" tabindex="-1" role="dialog" aria-labelledby="updateAvatarLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-b f-6" id="exampleModalLabel">
+                        <span class="icon-image2 mr-2"></span>
+                        Actualizacion de imagen de perfil
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-5 mt-4 mx-auto p-0">
+                        <img src="./Imagenes/images/users/face-user-01.jpg" class="marco-avatar-or-banner-update">
+                            <div class="custom-file mb-3 mt-4">
+                                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                <label class="custom-file-label" for="validatedCustomFile">Elije tu imagen...</label>
+                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                            </div>
+
+                        <div class="progress mt-3">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width:25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                25%
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info">
+                        <span class="icon-refresh mr-2 f-8"></span>
+                        Actualizar avatar
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Update Banner Modal -->
+    <div class="modal fade" id="updateBanner" tabindex="-1" role="dialog" aria-labelledby="updateBannerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-b f-6" id="exampleModalLabel">
+                        <span class="icon-image2 mr-2"></span>
+                        Actualizacion de Banner de fondo perfil
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-5 mt-4 mx-auto p-0">
+                        <img src="./Imagenes/images/banner.jpg" class="marco-avatar-or-banner-update">
+                            <div class="custom-file mb-3 mt-4">
+                                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                <label class="custom-file-label" for="validatedCustomFile">Elije tu imagen...</label>
+                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                            </div>
+
+                        <div class="progress mt-3">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width:25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                25%
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info">
+                        <span class="icon-refresh mr-2 f-8"></span>
+                        Actualizar avatar
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Update CV -->
+
+    <div class="modal fade" id="updateCV" tabindex="-1" role="dialog" aria-labelledby="updateCVLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-b f-6" id="exampleModalLabel">
+                        <span class="icon-image2 mr-2"></span>
+                        Actualizacion curriculum vitae
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-6 mt-4 mx-auto p-0">
+                        <div class="col-xl-12">
+                            <p class="text-center">Aqui puedes actualizar tu CV. ten en cuenta que al actualizarlo el que tengas anteriormente se borrara.</p>
+                        </div>
+                        <div class="custom-file mb-3 mt-4">
+                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                            <label class="custom-file-label" for="validatedCustomFile">Elije tu imagen...</label>
+                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                        </div>
+
+                        <div class="progress mt-3">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width:25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                25%
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info">
+                        <span class="icon-refresh mr-2 f-8"></span>
+                        Actualizar CV
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bs-1" style="width:100%;height:50px;position:fixed;z-index:30;">
+        <nav class="bar navbar navbar-expand-lg bs-1">
+            <a class="navbar-brand" href="index.html">WORKLER</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-menu c-b3"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link c-b3" href="#">
+                      <span class="icon-home4 mr-2 f-7 "></span>Inicio  
+                      <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link c-b3" href="#">Publicaciones</a>
+                </li>
+                <li class="nav-item mr-5">
+                    <a class="nav-link c-b3" href="#">
+                        <span class="icon-briefcase2 mr-2 f-7"></span>
+                        Empleos
+                    </a>
+                </li>
+              </ul>
+              <div class="form-inline my-2 my-lg-0" style="margin-right:150px;">
+                <ul style="list-style: none;">
+                    <li class="nav-item dropdown ml-5 fw-b pt-2">
+                        <a class="nav-link dropdown-toggle c-b3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="./Imagenes/images/users/face-user-01.jpg" class="img-profile-nav-bar">
+                            Agustin Villegas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item f-7" href="user.html">
+                              <span class="icon-user2 mr-2"></span>
+                              Perfil
+                          </a>
+                          <a class="dropdown-item f-7" href="sett.html">
+                              <span class="icon-cogs mr-2"></span>
+                              Configuracion
+                          </a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item f-7" href="#">
+                              <span class="icon-log-out mr-2"></span>
+                              Salir
+                          </a>
+                        </div>
+                      </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <div class="col-xl-12 border" style="padding-top:150px;">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-10 col-10 mx-auto mb-4" id="box-profile">
+                    
+                    <div class="col-xl-12 bck-01 p-0 pb-3 bs-1" id="box-profile-child">
+                        <div class="col-xl-12 p-0">
+
+                            <div class="box-edit-avatar-user cp" data-toggle="modal" data-target="#updateAvatar">
+                                <span class="icon-edit-2 d-block text-center mt-1 c-w1" ></span>
+                            </div>
+                                
+                            <div class="status-user-connect"></div>
+                            <span class="icon-image2 c-w1 icon-edit-banner-profile-user" data-toggle="modal" data-target="#updateBanner"></span>
+                            <img src="./Imagenes/images/banner.jpg" class="img-full">
+                        </div>
+                        <div class="box-avatar-user-profile">
+                            <img src="./Imagenes/images/users/face-user-01.jpg" class="img-full avatar-user-profile">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-xl-12">
+                            <h1 class="f-6 text-center fw-b">Agustin Villegas</h1>
+                            <h6 class="f-7 text-center">Programador - Fullstack</h6>
+                        </div>
+                        
+
+                        <ul class="nav mt-3" id="myTab" role="tablist">
+                            <li class="box-icons-profile-settings" role="presentation">
+                                <a class="active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                    <span class="icon-home4 icons-profile-settings"></span>
+                                </a>
+                            </li>
+                            <li class="box-icons-profile-settings" role="presentation">
+                                <a class="" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                                    <span class="icon-lock2 icons-profile-settings"></span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <br>
+
+                        <div class="col-xl-12 text-center">
+                            <div class="py-2">
+                                <span class="icon-envelope f-7 mr-2"></span>
+                                <small>ErikaVillegas_017@hotmail.com</small>
+                            </div>
+                            <div class="py-2">
+                                <span class="icon-calendar f-7 mr-2"></span>
+                                <small>26/04/1988 - 32 años</small>
+                            </div>
+                            <hr>
+                            <div class="py-2">
+                                <small>Argentina | Bs As.</small>
+                            </div>
+                            <div class="py-2">
+                                <span class="icon-location f-7 mr-2"></span>
+                                <small>San justo | Florencio Varela 3838</small>
+                            </div>
+                            <div class="py-2">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width:25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                        25%
+                                    </div>
+                                </div>
+                                <span class="f-8 text-center">
+                                    25% del Cv cargado
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-9 col-lg-8 col-md-7 col-sm-10 col-10 mx-auto tab-content p-0" id="myTabContent">
+
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                
+                                <div class="col-xl-12 border bs bck-01 mb-3 bs-1">
+                                    <h3 class="pt-2 pb-1 f-5 fw-b">Postulaciones</h3>
+                                </div>
+
+                                <div class="col-xl-12">
+                                    <div class="row">
+
+                                        
+                                        <!-- POST 1 -->
+                                        <div class="col-xl-12 col-lg-6 py-2">
+                                            <div class="col-xl-12 p-0">
+
+
+                                                <div class="col-xl-12 border bck-01 py-2 fw-b bs-1">
+                                                    <div class="row">
+                                                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                                                            <span>Uala</span>
+                                                        </div>
+                                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 dropdown-toggle cp" role="group" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            
+                                                            <div class="btn-group">
+                                                                <span class="mt-1" id="btnGroupDrop1"></span> 
+                                                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                                    <a class="dropdown-item f-7" href="#">
+                                                                        <span class="icon-trash mr-2"></span>
+                                                                        Eliminar postulacion
+                                                                    </a>
+                                                                    <a class="dropdown-item f-7" href="#">
+                                                                        <span class="icon-eye2 mr-2"></span>
+                                                                        Ver publicacion
+                                                                    </a>
+                                                                    <a class="dropdown-item f-7" href="#">
+                                                                        <span class="icon-bubble2 mr-2"></span>
+                                                                        Ver comentarios
+                                                                    </a>
+                                                                </div>
+                                                            </div>   
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 border p-0">
+                                                    <img src="./imagenes/images/logos/uala.png" class="img-avatar-company-profile-user">
+                                                    <img src="./Imagenes/images/posts/03.jpg" class="img-full">
+                                                </div>
+                                                
+                                                <div class="col-xl-12 border mb-4 bck-01 bs-1">
+                                                    <div class="row">
+                                                        <div class="col-xl-10 mt-4 cc-1 fw-b">
+                                                            Ingeniera / Ingeniero de Software Frontend
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <p class="">
+                                                        <span class="icon-location f-7 mr-2"></span>
+                                                        <small>San justo | Florencio Varela 3838 - Argentina - Bs As</small>
+                                                    </p>
+                                                    <hr>
+                                                    <div class="row">
+                                                        <div class="col-xl-8 f-7">
+                                                            <span class="icon-clock mr-2"></span>
+                                                            En proceso de seleccion
+                                                        </div>
+                                                        <div class="col-xl-4 f-7">
+                                                            <span class="icon-calendar2 mr-2"></span>
+                                                            <!-- <img src="Imagenes/Iconos/calendar_01.png" class="icons-profile"> -->
+                                                            12/02/2020
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-center f-7">
+                                                        
+                                                    </p>
+                                                    <p class="f-8 mt-2 text-right"> 
+                                                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- POST 2 -->
+                                        <div class="col-xl-12 col-lg-6 py-2">
+                                            <div class="col-xl-12 p-0">
+
+
+                                                <div class="col-xl-12 border bck-01 py-2 fw-b bs-1">
+                                                    <div class="row">
+                                                        <div class="col-xl-10 col-lg-10">
+                                                            <span>Mercadolibre</span>
+                                                        </div>
+                                                        <div class="col-xl-2 col-lg-2 dropdown-toggle cp" role="group" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            
+                                                            <div class="btn-group">
+                                                                <span class="mt-1" id="btnGroupDrop1"></span> 
+                                                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                                    <a class="dropdown-item f-7" href="#">
+                                                                        <span class="icon-trash mr-2"></span>
+                                                                        Eliminar postulacion
+                                                                    </a>
+                                                                    <a class="dropdown-item f-7" href="#">
+                                                                        <span class="icon-eye2 mr-2"></span>
+                                                                        Ver publicacion
+                                                                    </a>
+                                                                    <a class="dropdown-item f-7" href="#">
+                                                                        <span class="icon-bubble2 mr-2"></span>
+                                                                        Ver comentarios
+                                                                    </a>
+                                                                </div>
+                                                            </div>   
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 border p-0">
+                                                    <img src="./imagenes/images/logos/ml.jpg" class="img-avatar-company-profile-user">
+                                                    <img src="./Imagenes/images/posts/02.jpg" class="img-full">
+                                                </div>
+                                                
+                                                <div class="col-xl-12 border mb-4 bck-01 bs-1">
+                                                    <div class="row">
+                                                        <div class="col-xl-10 mt-4 cc-1 fw-b">
+                                                            Ingeniera / Ingeniero de Software Frontend
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <p class="">
+                                                        <span class="icon-location f-7 mr-2"></span>
+                                                        <small>San justo | Florencio Varela 3838 - Argentina - Bs As</small>
+                                                    </p>
+                                                    <hr>
+                                                    <div class="row">
+                                                        <div class="col-xl-8 f-7">
+                                                            <span class="icon-clock mr-2"></span>
+                                                            En proceso de seleccion
+                                                        </div>
+                                                        <div class="col-xl-4 f-7">
+                                                            <span class="icon-calendar2 mr-2"></span>
+                                                            <!-- <img src="Imagenes/Iconos/calendar_01.png" class="icons-profile"> -->
+                                                            12/02/2020
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-center f-7">
+                                                        
+                                                    </p>
+                                                    <p class="f-8 mt-2 text-right"> 
+                                                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>
+
+                            <div class="col-xl-6 col-lg-12">
+                                <div class="col-xl-12 border bs bck-01 bs-1">
+                                    <h3 class="pt-2 pb-1 f-5 fw-b">Experiencia laboral</h3>
+                                </div>
+                                
+                                <div class="row">
+
+                                    <div class="col-xl-12 col-lg-6 mt-3 mb-3">
+                                        <div class="col-xl-12 bck-01 bs-1">
+                                            <div class="row">
+                                                <div class="col-xl-4 col-lg-12 col-4 py-4">
+                                                    <img src="./imagenes/images/logos/accenture.jpg" class="img-full">
+                                                </div>
+                                                <div class="col-xl-8 col-lg-12 py-4 col-8">
+                                                    <div class="col-xl-12 p-0 text-center">
+                                                        <h1 class="fw-b f-6 mt-2">Accenture</h1>
+                                                    </div>
+                                                    <div class="col-xl-12 f-7 text-center">
+                                                        <span class="fw-b">Puesto:</span>
+                                                        <span>Programador Front-End , UI/UX</span><br>
+                                                        <span class="fw-b">Desde:</span>
+                                                        <span>12/02/2014 a 14/01/2016</span>
+                                                        <span>Moron - Prov. Bs As - Argentina</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-12 col-lg-6 mt-3 mb-3">
+                                        <div class="col-xl-12 bck-01 bs-1">
+                                            <div class="row">
+                                                <div class="col-xl-4 col-lg-12 col-4 py-4">
+                                                    <img src="./imagenes/images/logos/globant.png" class="img-full">
+                                                </div>
+                                                <div class="col-xl-8 col-lg-12 py-4 col-8">
+                                                    <div class="col-xl-12 p-0 text-center">
+                                                        <h1 class="fw-b f-6 mt-2">Globant</h1>
+                                                    </div>
+                                                    <div class="col-xl-12 f-7 text-center">
+                                                        <span class="fw-b">Puesto:</span>
+                                                        <span>Programador Back-End , Arquitecto Mysql</span><br>
+                                                        <span class="fw-b">Desde:</span>
+                                                        <span>12/02/2014 a 14/01/2016</span>
+                                                        <span>Primera junta - Capital federal - Argentina</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12 bs-1 bck-01 py-2">
+                                    <span class="f-5 fw-b">Habilidades</span>
+                                </div>
+
+                                <div class="col-xl-12 mb-3">
+                                    <div class="row">
+
+                                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 pl-0 cp mt-3">
+                                            <div class="col-xl-12 py-2 bck-01 bs-1">
+                                                <div class="row">
+                                                    <div class="col-xl-12 py-2">
+                                                        <img src="Imagenes/icons/laravel.png" class="icon-skills">
+                                                    </div>
+                                                    <div class="col-xl-12 f-7 text-center fw-m">
+                                                        Laravel
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 pl-0 cp mt-3">
+                                            <div class="col-xl-12 py-2 bck-01 bs-1">
+                                                <div class="row">
+                                                    <div class="col-xl-12 py-2">
+                                                        <img src="./imagenes/icons/css3.png" class="icon-skills">
+                                                    </div>
+                                                    <div class="col-xl-12 f-7 text-center fw-m">
+                                                        Css3
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 pl-0 cp mt-3">
+                                            <div class="col-xl-12 py-2 bck-01 bs-1">
+                                                <div class="row">
+                                                    <div class="col-xl-12 py-2">
+                                                        <img src="imagenes/icons/html5.png" class="icon-skills">
+                                                    </div>
+                                                    <div class="col-xl-12 f-7 text-center fw-m">
+                                                        HTML5
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 pl-0 cp mt-3">
+                                            <div class="col-xl-12 py-2 bck-01 bs-1">
+                                                <div class="row">
+                                                    <div class="col-xl-12 py-2">
+                                                        <img src="imagenes/icons/php.png" class="icon-skills">
+                                                    </div>
+                                                    <div class="col-xl-12 f-7 text-center fw-m">
+                                                        PHP 7
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 pl-0 cp mt-3">
+                                            <div class="col-xl-12 py-2 bck-01 bs-1">
+                                                <div class="row">
+                                                    <div class="col-xl-12 py-2">
+                                                        <img src="./imagenes/icons/angular.png" class="icon-skills">
+                                                    </div>
+                                                    <div class="col-xl-12 f-7 text-center fw-m">
+                                                        Angular
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 pl-0 cp mt-3">
+                                            <div class="col-xl-12 py-2 bck-01 bs-1">
+                                                <div class="row">
+                                                    <div class="col-xl-12 py-2">
+                                                        <img src="imagenes/icons/vue.png" class="icon-skills">
+                                                    </div>
+                                                    <div class="col-xl-12 f-7 text-center fw-m">
+                                                        Vue.js
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 pl-0 cp mt-3">
+                                            <div class="col-xl-12 py-2 bck-01 bs-1">
+                                                <div class="row">
+                                                    <div class="col-xl-12 py-2">
+                                                        <img src="imagenes/icons/js.png" class="icon-skills">
+                                                    </div>
+                                                    <div class="col-xl-12 f-7 text-center fw-m">
+                                                        Javascript
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        
+
+                                    
+
+
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 mb-3 bck-01 bs-1">
+                                    <h3 class="pt-2 pb-1 f-5 fw-b">Educación</h3>
+                                </div>
+
+                                <div class="col-xl-12 bck-01 bs-1">
+                                    <div class="col-xl-12">
+                                        <div class="row">
+                                            <div class="col-xl-12 py-2">
+                                                <span>Eduacion primaria <br></span>
+                                                <small>- Instituto Jesus Resucitado</small>
+                                                <small>| Egresado - 2014</small>
+                                            </div>
+                                            
+                                            <div class="col-xl-12 py-2">
+                                                <span>Eduacion Secundaria <br></span>
+                                                <small>- La abanderada </small>
+                                                <small>| Egresado - 2019</small>
+                                            </div>
+
+                                            <div class="col-xl-12 py-2">
+                                                <span>Eduacion Terciaria <br></span>
+                                                <small>- Tecnicatura en programación </small>
+                                                <small>| php POO | Js prototypes | Egreso: 2020</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="col-xl-12">
+                                    <div class="col-xl-12 bs-1 py-2 bck-01 mb-3 border bck-01">
+                                        <h3 class="pt-2 pb-1 f-5 fw-b">Cambio de correo y/o de contraseña</h3>
+                                    </div>
+
+                                    <div class="col-xl-12 bs-1 border bck-01 py-2">
+                                        <form class="col-xl-6 mx-auto py-4">
+                                            <div class="form-group">
+                                                <label>
+                                                    <span class="icon-envelope mr-2 f-8 c-b2"></span>  
+                                                    Correo Electronico(E-mail)
+                                                </label>
+                                                <input type="email" class="form-control text-center" placeholder="diartematias31@gmail.com" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                <small id="emailHelp" class="form-text text-muted">Aqui puede cambiar el correo</small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>
+                                                    <span class="icon-lock mr-2 f-8 c-b2"></span>
+                                                    Contraseña anterior
+                                                </label>
+                                                <input type="password" class="form-control text-center" placeholder="" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>
+                                                    <span class="icon-key2 mr-2 f-8 c-b2"></span>
+                                                    Contraseña nueva
+                                                </label>
+                                                <input type="password" class="form-control text-center" placeholder="" id="exampleInputPassword1">
+                                                </div>
+                                                <hr>
+                                            <button type="submit" class="btn btn-primary" style="font-size:.8rem;">
+                                                <span class="icon-check-circle mr-3"></span>
+                                                Confirmar
+                                            </button>
+                                            <br>
+                                            <a href="" class="f-7">He olvidado mi contraseña</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div> 
+                    </div>
+                </div>
+                <!-- END ROW -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Custom scripts -->
+    <script></script>
+    <!-- Jquery - Bootstrap - Popper -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
